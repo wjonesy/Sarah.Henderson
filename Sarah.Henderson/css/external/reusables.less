@@ -1,0 +1,228 @@
+﻿@import "../bootstrap/bootstrap.less";
+.color-white {
+    color: #fff;
+}
+
+.color-primary {
+    color: @brand-primary;
+}
+
+.brand-primary-bg {
+    background: @brand-primary;
+}
+
+.no-gutter {
+
+    &.container, &.container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.gutter {
+
+    &.container, &.container-fluid {
+        padding-left: @grid-gutter-width/2;
+        padding-right: @grid-gutter-width/2;
+    }
+
+    .row {
+        margin-left: -@grid-gutter-width/2;
+        margin-right: -@grid-gutter-width/2;
+    }
+
+    [class*="col-"] {
+        padding-left: @grid-gutter-width/2 !important;
+        padding-right: @grid-gutter-width/2 !important;
+    }
+}
+.row.small-gutter {
+    margin-left: -@grid-gutter-width/4;
+    margin-right: -@grid-gutter-width/4;
+
+    [class*="col-"] {
+        padding-left: @grid-gutter-width/4;
+        padding-right: @grid-gutter-width/4;
+    }
+}
+.row.large-gutter {
+    margin-left: -@grid-gutter-width;
+    margin-right: -@grid-gutter-width;
+
+    [class*="col-"] {
+        padding-left: @grid-gutter-width;
+        padding-right: @grid-gutter-width;
+    }
+}
+
+
+.margin-top-bottom {
+    margin-top: @grid-gutter-width / 2;
+    margin-bottom: @grid-gutter-width / 2;
+
+    @media (max-width:@screen-sm-max) {
+        margin-top: @grid-gutter-width / 4;
+        margin-bottom: @grid-gutter-width / 4;
+    }
+}
+
+.margin-top-bottom-large {
+    margin-top: @grid-gutter-width;
+    margin-bottom: @grid-gutter-width;
+
+    @media (max-width:@screen-sm-max) {
+        margin-top: @grid-gutter-width / 2;
+        margin-bottom: @grid-gutter-width / 2;
+    }
+}
+
+.margin-top {
+    margin-top: @grid-gutter-width/2;
+}
+
+.margin-top-large {
+    margin-top: @grid-gutter-width;
+}
+
+.margin-bottom {
+    margin-bottom: @grid-gutter-width/2;
+}
+
+.margin-bottom-large {
+    margin-bottom: @grid-gutter-width;
+}
+
+.padding-top-bottom {
+    padding-top: @grid-gutter-width / 2;
+    padding-bottom: @grid-gutter-width / 2;
+
+    @media (max-width:@screen-sm-max) {
+        padding-top: @grid-gutter-width / 4;
+        padding-bottom: @grid-gutter-width / 4;
+    }
+}
+
+.padding-top-bottom-large {
+    padding-top: @grid-gutter-width;
+    padding-bottom: @grid-gutter-width;
+
+    @media (max-width:@screen-sm-max) {
+        padding-top: @grid-gutter-width / 2;
+        padding-bottom: @grid-gutter-width / 2;
+    }
+}
+
+.padding-left-right {
+    padding-left: @grid-gutter-width / 2;
+    padding-right: @grid-gutter-width / 2;
+
+    @media (max-width:@screen-sm-max) {
+        padding-left: @grid-gutter-width / 4;
+        padding-right: @grid-gutter-width / 4;
+    }
+}
+
+.padding-left-right-large {
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+
+    @media (max-width:@screen-sm-max) {
+        padding-left: @grid-gutter-width / 2;
+        padding-right: @grid-gutter-width / 2;
+    }
+}
+
+.padding-top {
+    padding-top: @grid-gutter-width / 2;
+}
+
+.padding-top-large {
+    padding-top: @grid-gutter-width;
+}
+
+.padding-bottom {
+    padding-bottom: @grid-gutter-width / 2;
+}
+
+.padding-bottom-large {
+    padding-bottom: @grid-gutter-width;
+}
+
+.padding-left {
+    padding-left: @grid-gutter-width / 2;
+}
+
+.padding-left-large {
+    padding-left: @grid-gutter-width;
+}
+
+.padding-right {
+    padding-right: @grid-gutter-width / 2;
+}
+
+.padding-right-large {
+    padding-right: @grid-gutter-width;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-margin-left {
+    margin-left: 0;
+}
+
+.no-margin-right {
+    margin-right: 0;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.headings-font {
+    font-family: @headings-font-family;
+}
+
+.btn {
+    border-radius: 0;
+    box-shadow: 0;
+    text-transform: uppercase;
+    color: @text-color;
+    letter-spacing: 1px;
+
+    &:hover {
+        border-radius: 0;
+        box-shadow: 0;
+        text-transform: uppercase;
+    }
+}
+
+.bg-primary{
+    background:@brand-primary;
+}
+.bg-secondary{
+    background:@brand-secondary;
+}
