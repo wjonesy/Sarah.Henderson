@@ -294,9 +294,14 @@
   <ItemGroup>
     <Content Include="Config\grid.editors.config.js" />
     <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\main.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="css\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Gulpfile.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -484,7 +489,7 @@
     <Content Include="css\external\BootstrapCenteredColumns.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="package.json" />
+    <None Include="compilerconfig.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

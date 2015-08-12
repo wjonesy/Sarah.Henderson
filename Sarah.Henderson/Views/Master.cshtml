@@ -1,5 +1,5 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@using ClientDependency.Core.Mvc;   
+@using ClientDependency.Core.Mvc;
 @{
     Layout = null;
     Html.RequiresCss("~/css/main.css");
@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sarah Henderson</title>
     <meta name="description" content="" />
-    <link rel="shortcut icon" href="/favicon.ico">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -20,14 +19,30 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic|Roboto+Condensed' rel='stylesheet' type='text/css'>
 
     @Html.RenderCssHere()
-    </head>
+</head>
 <body>
+    <header>
+        <div class="container-fluid bg-off-black header-top color-white padding-top-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4 class="no-margin">This is where the header/search/social media goes</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+
+        </div>
+
+    </header>
+
+
     @RenderBody()
-    <h1>Hello World</h1>
+    
     @Html.RenderJsHere()
 </body>
 </html>
-   
