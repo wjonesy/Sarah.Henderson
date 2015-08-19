@@ -19,7 +19,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic|Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text|Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     @Html.RenderCssHere()
 </head>
@@ -29,20 +30,47 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h4 class="no-margin">This is where the header/search/social media goes</h4>
+                        <h4 class="no-margin">This is where the menu/header/search/social media goes</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="">
+    </header>
+    <div class="container padding-top-bottom-large">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="sarah-henderson color-primary">Sarah Henderson</h1>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+    @Html.RenderJsHere()
+    <footer class="footer">
+        <div class="container padding-top-bottom">
+            <div class="row">
+                <div class="row-same-height">
+                    <div class="col-sm-4 col-sm-height col-middle">
+                        <h4>Sarah Henderson</h4>
+                        <p>I like big butts and I can not lie, you other brothers can't deny.</p>
+                        <p>That when a girl walks in with an itty bitty waist, And a round thing in your face,<br />You get sprung.</p>
+                        <p>
+                            Wanna pull up tough,
+                            'cause you notice that butt was stuffed,
+                            Deep in the jeans she's wearing.
+                        </p>
+                        <p class="text-center"><a href="#" class="btn btn-primary  text-uppercase">Read More</a></p>
+
+                    </div>
+                    <div class="col-sm-4 col-sm-height col-middle"><img src="~/img/footer-1.jpg" class="img-responsive" /></div>
+                    <div class="col-sm-4 col-sm-height col-middle">
+                        <img src="/img/sarah.jpg" class="img-circle img-responsive img-thumbnail">
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-    </header>
-
-
-    @RenderBody()
-    
-    @Html.RenderJsHere()
+    </footer>
 </body>
 </html>

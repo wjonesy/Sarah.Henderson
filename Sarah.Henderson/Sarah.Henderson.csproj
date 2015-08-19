@@ -302,6 +302,11 @@
     </Content>
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="img\Corprate-canals-keep-businesses-afloat.jpg" />
+    <Content Include="img\footer-1.jpg" />
+    <Content Include="img\Global-warming-warms-hearts.jpg" />
+    <Content Include="img\news-item-example-1.jpg" />
+    <Content Include="img\sarah.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
