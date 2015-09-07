@@ -293,6 +293,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\grid.editors.config.js" />
+    <Content Include="css\external\font-awesome.min.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
     <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="css\main.css">
       <DependentUpon>main.less</DependentUpon>
@@ -307,6 +309,14 @@
     <Content Include="img\Global-warming-warms-hearts.jpg" />
     <Content Include="img\news-item-example-1.jpg" />
     <Content Include="img\sarah.jpg" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <None Include="scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="scripts\jquery-2.1.4.js" />
+    <Content Include="scripts\jquery-2.1.4.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -322,7 +332,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="media\" />
     <Folder Include="Models\" />
-    <Folder Include="scripts\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
@@ -496,6 +505,7 @@
   <ItemGroup>
     <None Include="compilerconfig.json" />
     <Content Include="dbBackups\Sarah.Henderson150819.bak" />
+    <Content Include="scripts\jquery-2.1.4.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
