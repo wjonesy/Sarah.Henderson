@@ -13,24 +13,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sarah Henderson</title>
     <meta name="description" content="" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text|Roboto+Condensed' rel='stylesheet' type='text/css'>    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto+Condensed" rel="stylesheet" type="text/css">
     @Html.RenderCssHere()
 </head>
 <body>
     <header>
-        <div class="container-fluid bg-off-black header-top color-white padding-top-bottom">
-            <div class="container">
+        <div class="container-fluid no-gutter">
+            <div class="col-sm-10 col-sm-push-1 main-nav-wrapper">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <h4 class="no-margin">This is where the menu/header/search/social media goes</h4>
+                    <div class="col-sm-10 col-sm-push-1">
+                        <nav>@Umbraco.RenderMacro("MainNav")</nav>
                     </div>
                 </div>
             </div>
@@ -51,20 +52,36 @@
             <div class="row">
                 <div class="row-same-height">
                     <div class="col-sm-4 col-sm-height col-middle">
-                        <h4>Sarah Henderson</h4>
-                        <p>I like big butts and I can not lie, you other brothers can't deny.</p>
-                        <p>That when a girl walks in with an itty bitty waist, And a round thing in your face,<br />You get sprung.</p>
-                        <p>
-                            Wanna pull up tough,
-                            'cause you notice that butt was stuffed,
-                            Deep in the jeans she's wearing.
-                        </p>
-                        <p class="text-center"><a href="#" class="btn btn-primary  text-uppercase">Read More</a></p>
+                        <div class="row">
+                            <div class="col-xxs-10 col-xs-push-1">
+                                <h4>Sarah Henderson</h4>
+                                <p>I like big butts and I can not lie, you other brothers can't deny.</p>
+                                <p>That when a girl walks in with an itty bitty waist, And a round thing in your face,<br />You get sprung.</p>
+                                <p>
+                                    Wanna pull up tough,
+                                    'cause you notice that butt was stuffed,
+                                    Deep in the jeans she's wearing.
+                                </p>
+                                <p class="text-center"><a href="#" class="btn btn-primary  text-uppercase">Read More</a></p>
+                            </div>
+                        </div>
+
 
                     </div>
-                    <div class="col-sm-4 col-sm-height col-middle"><img src="~/img/footer-1.jpg" class="img-responsive" /></div>
                     <div class="col-sm-4 col-sm-height col-middle">
-                        <img src="/img/sarah.jpg" class="img-circle img-responsive img-thumbnail">
+                        <div class="row">
+                            <div class="col-xxs-10 col-xs-push-1">
+                                <img src="~/img/footer-1.jpg" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-sm-height col-middle">
+                        <div class="row">
+                            <div class="col-xxs-10 col-xs-push-1">
+                                <img src="/img/sarah.jpg" class="img-circle img-responsive img-thumbnail">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

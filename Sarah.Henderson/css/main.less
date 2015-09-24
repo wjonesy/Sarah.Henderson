@@ -2,9 +2,9 @@
 @import "external/BootstrapSameHeightColumns.less";
 @import "external/BootstrapCenteredColumns.less";
 
-.sarah-henderson{
-    font-size:50px;
-    text-align:center;
+.sarah-henderson {
+    font-size: 50px;
+    text-align: center;
 }
 
 .news-list-item-intro {
@@ -33,7 +33,51 @@
     text-align: center;
     vertical-align: middle;
 }
-.footer{
+
+.footer {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 2, 0.3);
     box-shadow: 0 1px 3px rgba(0, 0, 2, 0.3);
+}
+
+.main-nav-wrapper {
+    border-bottom-left-radius: @border-radius-small;
+    border-bottom-right-radius: @border-radius-small;
+    .box-shadow(0 1px 3px rgba(0,0,2px,.3));
+}
+
+.main-nav {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding:0;
+}
+
+.main-mav-item {
+    display: inline-block;
+    list-style: none;
+    color: @text-color;
+    display: table-cell;
+    text-align: center;
+    margin: 0;
+    padding: @grid-gutter-width/2 0;
+
+    &.active{
+        .main-nav-link{
+            font-weight:bold
+        }
+    }
+}
+
+.main-nav-link {
+    color: @text-color;
+    font-size:20px;
+
+    .transition(.3s color ease-in-out);
+
+
+    &:hover, &:active, &:focus {
+        color: @brand-primary;
+        .transition(.3s color ease-in-out);
+        text-decoration: none;
+    }
 }
